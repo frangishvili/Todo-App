@@ -2,7 +2,7 @@ import React from "react";
 import { GrClose } from "react-icons/gr";
 import { GrCheckboxSelected } from "react-icons/gr";
 
-const Todo = ({ todos, todo, setTodos }) => {
+const SingleTodo = ({ todos, todo, setTodos }) => {
   const removeTodo = (id) => {
     const removedArr = [...todos].filter((todo) => todo.id !== id);
     setTodos(removedArr);
@@ -32,4 +32,4 @@ const Todo = ({ todos, todo, setTodos }) => {
   );
 };
 
-export default Todo;
+export default SingleTodo;

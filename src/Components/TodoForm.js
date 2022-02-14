@@ -17,7 +17,6 @@ function TodoForm({ input, setInput, addTodo, setStatus }) {
   };
   const changefilterHandler = (event) => {
     setStatus(event.target.value);
-    console.log(event.target.value);
   };
 
   return (
