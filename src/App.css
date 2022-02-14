@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(105, 0, 0);
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 700px;
+  min-height: 800px;
+  background: #130808;
+  text-align: center;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-form {
+  margin-bottom: 90px;
+}
+.container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 3px solid #a00606;
+  outline: none;
+  width: 500px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg, rgb(168, 12, 25) 0%, rgb(78, 5, 5) 100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.todo-filter label {
+  font-size: 16px;
+  color: rgb(223, 7, 7);
+}
+.todo-filter select {
+  background-color: black;
+  color: rgb(241, 8, 8);
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 3px 3px 3px 0;
+}
+.select option {
+  background-color: rgb(44, 40, 40);
+  border-radius: 5px;
+  color: red;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(90deg, rgb(151, 9, 33) 0%, rgb(155, 7, 7) 100%);
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.complete-icon {
+  margin-right: 5px;
+}
